@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav{
+  margin: 20px 0px 20px 0px;
+  width: 100%;
+  background: rgb(33, 28, 42);
+  text-align: center;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+}
+.all{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.top{
+  background: darkgray;
+  width: 100%;
+  padding: 10px;
+}
+.personal{
+  text-align: center;
+  background: lightgray;
+  width: 80%;
+  border-right: 10px solid black;
+  border-left: 10px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.personal .table{
+  padding: 15px;
+}
+.personal .inside{
+  display: flex;
+  justify-content: center;
+  /* background: green; */
+   
+}
+#responsive{
+  display: flex;
+  justify-content: center;
+  /* background: orange; */
+  max-width: 1000px;
+}
+.side{
+  padding: 10px;
+  display: flex;
+}
+.personal .table th, .personal .table td, .side p{
+  text-align: left;
+  padding: 5px;
+  font-size: 20px;
+}
+.personal .table input{
+  border: none;
+  background: lightgray;
+  border-bottom: 2px solid black;
+  outline: none;
+  text-align: left;
+  font-size: 20px;
+}
+.parallel{
+  display: flex;
+  flex-direction: row;
+}
+.arrange input{
+  background: black;
+  width: 200px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  /* margin-left: 40%; */
+  margin-bottom: 55px;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+.arrange input:hover{
+  background: orange;
+  transition: 0.5s;
+}
+textarea{
+  font-size: 18px;
+  background: none;
+  /* max-width: 400px; */
+}
+
+@media (max-width: 1110px){
+  .inside{
+    flex-direction: column;
+  }
+}
+
+#right{
+  position: absolute;
+  top: 65px;
+  right: 3%;
+}
+#right a{
+  font-size: 20px;
+  outline: none;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  color: black;
+  background: white;
+  border: 2px solid white;
+}
+#right a:hover{
+  border: 2px solid black;
+  transition: 0.5s;
+}

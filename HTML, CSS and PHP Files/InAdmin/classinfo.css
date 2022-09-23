@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: skyblue;
+}
+#right{
+  position: absolute;
+  top: 50px;
+  right: 3%;
+}
+#right a{
+  font-size: 20px;
+  outline: none;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  color: black;
+  background: white;
+  border: 2px solid white;
+}
+#right a:hover{
+  border: 2px solid black;
+  transition: 0.5s;
+}
+.head{
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 60px;
+  text-align: center;
+}
+.bg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.box{
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 20px;
+}
+.inside{
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.inside div{
+  padding: 10px 30px 10px 30px;
+  font-size: 30px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  border: 2px solid black;
+  margin: 40px;
+  border-radius: 25px;
+}
+form div{
+  font-size: 30px;
+  display: flex;
+  padding: 10px 40px;
+}
+form div .input{
+  background: none;
+  border: none;
+  border-bottom: 2px solid black;
+  width: 300px;
+  font-size: 30px;
+  outline: none;
+}
+.submit{
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 50px;
+  font-size: 25px;
+  cursor: pointer;
+  background: none;
+  border: 2px solid black;
+}
+.submit:hover{
+  background: orange;
+  color: white;
+  transition: 0.3s;
+  border: 2px solid white;
+}
+.error{
+  color: red;
+  margin-top: 10px;
+  font-size: 20px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav_back.css">
+    <link rel="stylesheet" href="S_up.css">
+    <title>Hamare Bachey</title>
+</head>
+<body>
+  <div class="bg">
+    <div class="navbar">
+      <ul>
+        <div class="lefty">
+          <li><a href="front.html"><b>Hamarey Bachey</b></a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </div>
+        <div class="righty"> 
+          <li><a href="S_up.html">Sign up</a></li>
+          <li><a href="L_in.html">Log in</a></li>
+        </div>  
+      </ul>
+    </div>  
+    <div class="form">
+      <form action="S_up.php" method="post">
+        <h2>Create Your Account</h2>
+        <input type="text" name="name" id="name" placeholder="Your Name" oninput="getme()" required>
+        <input type="number" name="age" id="age" placeholder="Your Age" oninput="getme()" required>
+        <input type="text" name="fname" id="fname" placeholder="Father's Name" oninput="getme()" required>
+        <input type="text" name="username" id="username" placeholder="Make a Username" oninput="getme()" required>
+        <input type="password" name="password" id="password" placeholder="Make a Password" oninput="getme()" required>  
+        <input type="submit" name="submit" id="submit">
+      </form>
+    </div>
+  </div>  
+</body>
+</html>
+
+
+<!-- <script>
+    function getme(){
+      // if(document.getElementById("submit").disabled=true){
+      //   document.getElementById("submit").setAttribute("id", "disa");
+      // }
+      if(document.getElementById("name").value!="" && document.getElementById("fname").value!="" && 
+      document.getElementById("username").value!="" && document.getElementById("age").value!="" &&
+      document.getElementById("password").value!=""){
+        document.getElementById("disable").setAttribute("id", "submit");
+        document.getElementById("submit").disabled=false;
+      }
+    }  
+  </script> -->

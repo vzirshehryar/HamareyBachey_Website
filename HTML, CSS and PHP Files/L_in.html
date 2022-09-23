@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav_back.css">
+    <link rel="stylesheet" href="L_in.css">
+    <title>Hamare Bachey</title>
+</head>
+<body>
+  <div class="bg">
+    <div class="navbar">
+      <ul>
+        <div class="lefty">
+          <li><a href="front.html"><b>Hamarey Bachey</b></a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </div>
+        <div class="righty"> 
+          <li><a href="S_up.html">Sign up</a></li>
+          <li><a href="L_in.html">Log in</a></li>
+        </div>  
+      </ul>
+    </div>  
+      <div class="form">
+        <form action="L_in.php" method="post">
+          <h2>Log in to Your Account</h2>
+          <input type="text" name="name" id="name" placeholder="Username" oninput="getme()" required>
+          <input type="password" name="password" id="Password" placeholder="Password" oninput="getme()" required>
+          <input type="submit" name="submit" id="submit" >
+          <p>Does not have an account. <a href="S_up.html">Create an Account!</a></p>
+        </form>
+      </div>
+  </div>  
+</body>
+</html>
+
+<!-- <script>
+    function getme(){
+      // if(document.getElementById("submit").disabled=true){
+      //   document.getElementById("submit").setAttribute("id", "disa");
+      // }
+      if(document.getElementById("name").value!="" &&
+      document.getElementById("Password").value!=""){
+        document.getElementById("disable").setAttribute("id", "submit");
+        document.getElementById("submit").disabled=false;
+      }
+    }  
+  </script> -->

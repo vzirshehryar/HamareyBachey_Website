@@ -1,0 +1,110 @@
+CREATE TABLE admin(
+    username varchar(30),
+    password varchar(20)
+    );
+
+CREATE TABLE Students
+( 
+    id integer(10) AUTO_INCREMENT, 
+    name varchar (50), 
+    age int(3),	
+    class int(2),
+    dob varchar(20), 
+    gender varchar (10),
+    fcnic varchar(20),
+    gcnic varchar(20),
+    challan int(10),
+    FOREIGN KEY(fcnic) REFERENCES parents(fcnic),
+    FOREIGN KEY(gcnic) REFERENCES guardians(gcnic),
+    FOREIGN KEY(challan) REFERENCES fees(challan),	
+    PRIMARY KEY (id) 
+);
+
+CREATE TABLE parents
+(  
+      mname varchar (50), 
+      mcontact varchar(20), 
+      mcnic varchar (20),
+      memail varchar(50),
+      maddress varchar (50), 
+      fname varchar (50), 
+      fcontact varchar(20), 
+      fcnic varchar (20) NOT NULL, 
+      femail varchar(50),
+      faddress varchar (50), 
+    
+      PRIMARY KEY (fcnic) 
+);
+
+CREATE TABLE guardians
+( 
+    gname varchar (50), 
+    gcontact varchar(20), 
+    gcnic varchar (20) PRIMARY KEY,
+    ggender varchar(10),
+    relation varchar(30)
+);
+
+CREATE TABLE fees
+( 
+    challan integer(10) PRIMARY KEY AUTO_INCREMENT,
+    tfee integer(20),
+    discount integer(20),
+    fee integer(20),
+    status varchar(10)
+);
+
+CREATE TABLE accompany(
+    acnic varchar(15) PRIMARY KEY,
+    aname varchar(30),
+    apregnant varchar(5),
+    reason varchar(100)
+    )
+
+CREATE TABLE class_history
+( 
+    cid integer(10) PRIMARY KEY AUTO_INCREMENT, 
+    oclass int(30), 
+    nclass int(3), 
+    reason varchar(100),
+    approvedby varchar(20),
+    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    id int(10),
+    FOREIGN KEY(id) REFERENCES students(id)     
+);
+
+create TABLE log(
+    l_id int(10) PRIMARY KEY AUTO_INCREMENT,
+    id int(10),
+    'action on' varchar(20),
+    date date,
+    FOREIGN KEY(id) REFERENCES students(id)
+    )
+
+CREATE TRIGGER `student_log` 
+AFTER UPDATE ON `students` 
+FOR EACH ROW 
+INSERT INTO log (name, id, 'action on', date)	
+VALUES("student", new.id, "UPDATE", now()); 
+
+CREATE TRIGGER `parent_log` 
+AFTER UPDATE ON `parents` 
+FOR EACH ROW 
+INSERT INTO log(name, id, action, date) 
+VALUES("parents", new.fcnic, "UPDATED", now());
+
+CREATE TRIGGER `guardian_log` 
+AFTER UPDATE ON `guardians` 
+FOR EACH ROW 
+INSERT INTO log(name, id, action, date) 
+VALUES("guardians", new.gcnic, "UPDATED", now()); 
+
+INSERT INTO parents(name, id, action, date) VALUES("parents", new.fcnic, "UPDATED", now()); 
+
+
+
+$query="insert into students(name, age, dob, gender) VALUES ("."'".  ."'".", ". $age .", "."'".  ."'".", "."'".  ."'".");"
+
+
+
+VALUES (10, 12, "none", "Ahmed", 8);

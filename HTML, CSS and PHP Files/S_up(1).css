@@ -1,0 +1,82 @@
+.form{
+  background: #111;
+  position: relative;
+  height: 600px;
+  width: 450px;
+  /* width: 470px; */
+  top: 40px;
+  /* right: 60%; */
+  border-radius: 5%;
+}
+.bg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding:  */
+}
+.form h2{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  color: orange;
+}
+#name, #password, #age, #fname, #username{
+  font-size: 25px;
+  color: white;
+  font-family: sans-serif;
+  display: block;
+  align-items: center;
+  width: 350px;
+  padding: 7px;
+  margin-top: 25px ;
+  /* margin-left: 15%; */
+  border: none;
+  outline: none;
+  background-color: #111;
+  border-bottom: 3px solid white;
+}
+#submit{
+  background: orange;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  /* margin-left: 40%; */
+  margin-top: 55px;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+#disable{
+  background: rgb(177, 98, 2);
+  opacity: 70%;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  /* margin-left: 40%; */
+  margin-top: 55px;
+  font-size: 18px;
+  color: white;
+}
+#submit:hover{
+  background: white;
+  transition: 0.5s;
+  color: black;
+}
+#name:hover, #password:hover, #age:hover, #fname:hover, #username:hover{
+  background: #222;
+  transition: 0.5s;
+}
+/* @media (max-width: 1200px){
+  .form{
+    right: 30%;
+    width: 30vw;
+  }
+} */

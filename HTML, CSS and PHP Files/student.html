@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="student.css">
+  <title>Hamarey Bachey</title>
+</head>
+<body>
+  <div class="nav">
+    Hamarey Bachey</br>Student Admission Form 
+  </div>
+  <div class="all">
+
+                  <!-- Student Information   --  Start -->
+
+    <div class="personal" style="border-top: 10px solid black;">
+      <div class="top">
+        <h2>Student Information</h2>
+      </div>
+      <div class="table">
+        <table>
+          <tr>
+            <th><p>Name</p></th>
+            <th>:</th>
+            <?php
+              session_start();
+              $name=$_SESSION['var1'];
+            ?>
+            <td colspan="2"><input type="text" name="name" value="<?php echo $name ?>"></td>
+          </tr>
+          <tr>
+            <th><p>Date of Birth</p></th>
+            <th>:</th>
+            <td colspan="2"><input type="date" name="date"></td>
+          </tr>
+          <tr>
+            <th><p>Gender</p></th>
+            <th>:</th>
+            <td colspan="2">
+              <input type="radio" id="male" name="gender" value="Male">
+              <label for="male">Male || </label>
+              <input type="radio" id="female" name="gender" value="Female">
+              <label for="female">Female || </label>
+              <input type="radio" id="other" name="gender" value="Other">
+              <label for="other">Other</label>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+                  <!-- Student Information   --  Finsish -->
+
+                  <!-- Parent Information   --  Start -->
+
+    <div class="personal">
+      <div class="top">
+        <h2>Parent Information</h2>
+      </div>
+      <div class="table">
+        <div class="inside">
+          <div>
+            <th><p>Mother Name</p></th>
+            <th>:</th>
+            <td><input type="text" name="mname"></td>
+          </div>
+          <div>
+            <th><p>Father Name</p></th>
+            <th>:</th>
+            <td><input type="text" name="fname"></td>
+          </div>
+          <div>
+            <th><p>Mother Contact</p></th>
+            <th>:</th>
+            <td><input type="text" name="mcontact"></td>
+          </div>
+          <div>
+            <th><p>Father Contact</p></th>
+            <th>:</th>
+            <td><input type="text" name="fcontact"></td>
+          </div>
+          <div>
+            <th><p>Mother CNIC</p></th>
+            <th>:</th>
+            <td><input type="text" name="mcnic"></td>
+          </div>
+          <div>
+            <th><p>Father CNIC</p></th>
+            <th>:</th>
+            <td><input type="text" name="fcnic"></td>
+          </div>
+          <div>
+            <th><p>Mother Email</p></th>
+            <th>:</th>
+            <td><input type="text" name="memail"></td>
+          </div>
+          <div>
+            <th><p>Father Email</p></th>
+            <th>:</th>
+            <td><input type="text" name="femail"></td>
+          </div>
+          <div>
+            <th><p>Mother Address</p></th>
+            <th>:</th>
+            <td><input type="text" name="maddress"></td>
+          </div>
+          <div>
+            <th><p>Father Address</p></th>
+            <th>:</th>
+            <td><input type="text" name="faddress"></td>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+                  <!-- Parent Information   --  Finish -->                  
+    
+                  <!-- Guardian Information   --  Start -->
+
+    <div class="personal">
+      <div class="top">
+        <h2>Guardian Information</h2>
+      </div>
+      <div class="table">
+        <table>
+          <tr>
+            <th><p>Guardian Name</p></th>
+            <th>:</th>
+            <td colspan="2"><input type="text" name="gname"></td>
+          </tr>
+          <tr>
+            <th><p>Guardian Contact</p></th>
+            <th>:</th>
+            <td colspan="2"><input type="text" name="gcontact"></td>
+          </tr>
+          <tr>
+            <th><p>Guardian CNIC</p></th>
+            <th>:</th>
+            <td colspan="2"><input type="text" name="gname"></td>
+          </tr>
+          <tr>
+            <th><p>Guardian Gender</p></th>
+            <th>:</th>
+            <td colspan="2">
+              <input type="radio" id="male" name="ggender" value="Male">
+              <label for="male">Male || </label>
+              <input type="radio" id="female" name="ggender" value="Female">
+              <label for="female">Female || </label>
+              <input type="radio" id="other" name="ggender" value="Other">
+              <label for="other">Other</label>
+            </td>
+          </tr>
+          <tr>
+            <th><p>Relation</p></th>
+            <th>:</th>
+            <td colspan="2"><input type="text" name="relation"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+                  <!-- Guardian Information   --  Finish -->
+
+                  <!-- For Staff Only   --  Start -->
+
+    <div class="personal" style="border-bottom: 10px solid black;">
+      <div class="top">
+        <h2>For Staff Only</h2>
+      </div>
+      <div class="table">
+        <table style="margin-bottom: 20px;">
+          <tr>
+            <th><p>Fee Ammount</p></th>
+            <th>:</th>
+            <td colspan="2"><input type="text" name="fee"></td>
+          </tr>
+          <tr>
+            <th><p>Discount</p></th>
+            <th>:</th>
+            <td colspan="2"><input type="text" name="discount"></td>
+          </tr>
+          <tr>
+            <th><p>Final Ammount</p></th>
+            <th>:</th>
+            <td colspan="2"><input type="text" name="famount"></td>
+          </tr>
+          <tr>
+            <th><p>Fee Fully Paid</p></th>
+            <th>:</th>
+            <td colspan="2">
+              <input type="radio" id="yes" name="paid" value="Yes">
+              <label for="yes">Yes || </label>
+              <input type="radio" id="no" name="paid" value="No">
+              <label for="no">No</label>
+            </td>
+          </tr>
+          <tr>
+            <th><p>Chalan #</p></th>
+            <th>:</th>
+            <td colspan="2"><input type="text" name="chalan"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+                 <!-- For Staff Only   --  Finish -->
+
+  </div>  
+</body>
+</html>

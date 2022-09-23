@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: skyblue;
+}
+.bg{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  border: 2px solid black;
+  padding: 50px;
+  border-radius: 25px;
+}
+select, label{
+  font-size: 25px;
+}
+select{
+  padding: 5px;
+  background: none;
+  border: 2px solid black;
+  outline: none;
+  cursor: pointer;
+}
+input{
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-left: 37%;
+  font-size: 25px;
+  cursor: pointer;
+  background: none;
+  border: 2px solid black;
+  
+}
+input:hover{
+  background: orange;
+  color: white;
+  transition: 0.3s;
+  border: 2px solid white;
+}
+.success{
+  padding: 10px;
+  color: green;
+}

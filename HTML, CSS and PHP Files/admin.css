@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: skyblue;
+}
+.box{
+  /* background: red; */
+  padding: 20px 30px;
+  max-width: 500px;
+}
+#right{
+  position: absolute;
+  top: 30px;
+  right: 3%;
+}
+.navbar{
+  padding-top: 30px;
+}
+.box a{
+  font-size: 20px;
+  outline: none;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  color: black;
+  background: white;
+  border: 2px solid white;
+}
+.box a:hover{
+  color: white;
+  background: orange;
+  transition: 0.3s;
+}

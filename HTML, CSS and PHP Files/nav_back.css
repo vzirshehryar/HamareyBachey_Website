@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg{
+  background-image: url('Images/bg3.webp');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  /* background-color: orange; */
+}
+                    /* Navbar Part */
+
+.navbar{
+  position: absolute;
+  top: 0;
+  width: 100%;
+}                    
+.navbar ul{
+  background: rgb(33, 28, 42);
+  opacity: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar ul li{
+  list-style: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+}
+.navbar ul li a{
+  color: white;
+  outline: none;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 15px;
+}
+.navbar ul li a:hover{
+  color: orange;
+  transition: 0.5s;
+}
+.lefty, .righty{
+  display: flex;
+  padding: 0 30px 0 30px;
+}
+
+@media only screen and (max-width: 650px){
+  .navbar ul li a{
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 530px){
+  .navbar ul li a{
+    font-size: 15px;
+    padding: 10px;
+    transition: 0.5s;
+  }
+}

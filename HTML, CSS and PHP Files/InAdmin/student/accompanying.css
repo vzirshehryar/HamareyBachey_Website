@@ -1,0 +1,88 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: skyblue;
+}
+.bg{
+  margin-top: 100px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.head{
+  padding: 50px 20px;
+  text-align: center;
+  font-size: 40px;
+}
+form{
+  border: 2px solid black;
+  padding: 50px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.box input, .box div, .box label, .box textarea{
+  font-size: 25px;
+  padding: 5px;
+  background: none;
+  outline: none;
+}
+.box textarea{
+  border: 2px solid black;
+}
+.box input{
+  border: none;
+  border-bottom: 2px solid black;
+}
+#yes, #no{
+  margin-left: 8px;
+  margin-right: 8px; 
+}
+#submit{
+  border: 2px solid black;
+  border-radius: 25px;
+  padding:10px 20px;
+  background: none;
+  color: black;
+}
+#submit:hover{
+  color: white;
+  background: orange;
+  border-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#right{
+  position: absolute;
+  top: 50px;
+  right: 3%;
+}
+#right a{
+  font-size: 20px;
+  outline: none;
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  color: black;
+  background: white;
+  border: 2px solid white;
+}
+#right a:hover{
+  border: 2px solid black;
+  transition: 0.5s;
+}

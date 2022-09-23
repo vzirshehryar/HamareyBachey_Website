@@ -1,0 +1,88 @@
+.form{
+  background: #111;
+  /* position: absolute; */
+  height: 510px;
+  width: 450px;
+  /* top: 23vh;
+  right: 60vw; */
+  border-radius: 5%;
+}
+.bg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.form h2{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  color: orange;
+}
+.error{
+  color: red;
+  position: absolute;
+  bottom: 135px;
+}
+#username, #Password{
+  font-size: 25px;
+  color: white;
+  font-family: sans-serif;
+  display: block;
+  align-items: center;
+  width: 350px;
+  padding: 7px;
+  margin-top: 30px ;
+  /* margin-left: 15%; */
+  border: none;
+  outline: none;
+  background-color: #111;
+  border-bottom: 3px solid white;
+}
+#submit{
+  background: orange;
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  /* margin-left: 40%; */
+  margin-top: 70px;
+  cursor: pointer;
+  border: none;
+}
+#disable{
+  background: rgb(177, 98, 2);
+  opacity: 70%;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  /* margin-left: 40%; */
+  margin-top: 55px;
+  font-size: 18px;
+  color: white;
+}
+#submit:hover{
+  background: white;
+  color: black;
+  transition: 0.5s;
+}
+#username:hover, #Password:hover{
+  background: #222;
+  transition: 0.5s;
+}
+form p{
+  text-align: center;
+  margin-top: 60px;
+  color: white;
+}
+form p a{
+  text-decoration: none;
+  color: orange;
+}
